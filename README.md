@@ -32,4 +32,14 @@ Please follow the guidelines [here](https://github.com/HappyColor/SpeechFormer).
   doi={10.1109/TASLP.2023.3235194}}
 ```
 
-S. Chen, X. Xing, W. Zhang, W. Chen and X. Xu, "DWFormer: Dynamic Window Transformer for Speech Emotion Recognition," ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece, 2023, pp. 1-5, doi: 10.1109/ICASSP49357.2023.10094651.
+```
+@ARTICLE{chen2023,
+  author={S. Chen, X. Xing, W. Zhang, W. Chen and X. Xu},
+  journal={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece}, 
+  title={DWFormer: Dynamic Window Transformer for Speech Emotion Recognition}, 
+  year={2023},
+  volume={31},
+  number={},
+  pages={1-5},
+  doi={10.1109/ICASSP49357.2023.10094651}}
+```
