@@ -1,0 +1,600 @@
+Sat, 11 May 2024 22:40:00 - train_model.py[line:274] - INFO: Testing epoch: 0, accuracy: 0.35582, precision: 0.35499, recall: 0.28383, F1: 0.20758, loss: 1.31120, confuse_matrix: 
+[[  0   6 131   0]
+ [  0  41 317   4]
+ [  0  17 306   4]
+ [  0  39 141  17]]
+Sat, 11 May 2024 22:40:45 - train_model.py[line:274] - INFO: Testing epoch: 1, accuracy: 0.42522, precision: 0.36039, recall: 0.37909, F1: 0.33060, loss: 1.23465, confuse_matrix: 
+[[  0   5 131   1]
+ [  0  60 264  38]
+ [  0  29 274  24]
+ [  0  40  56 101]]
+Sat, 11 May 2024 22:41:30 - train_model.py[line:274] - INFO: Testing epoch: 2, accuracy: 0.51026, precision: 0.51414, recall: 0.57086, F1: 0.50781, loss: 1.06175, confuse_matrix: 
+[[109  22   6   0]
+ [ 46 202  46  68]
+ [ 97 120  70  40]
+ [  5  45   6 141]]
+Sat, 11 May 2024 22:42:14 - train_model.py[line:274] - INFO: Testing epoch: 3, accuracy: 0.51808, precision: 0.58167, recall: 0.47501, F1: 0.48625, loss: 1.02290, confuse_matrix: 
+[[ 24  27  86   0]
+ [  3 212 111  36]
+ [  7 122 175  23]
+ [  0  61  17 119]]
+Sat, 11 May 2024 22:42:56 - train_model.py[line:274] - INFO: Testing epoch: 4, accuracy: 0.48094, precision: 0.53776, recall: 0.52978, F1: 0.48018, loss: 1.21384, confuse_matrix: 
+[[113   1  23   0]
+ [ 63  68 212  19]
+ [ 61  23 234   9]
+ [  3  39  78  77]]
+Sat, 11 May 2024 22:43:40 - train_model.py[line:274] - INFO: Testing epoch: 5, accuracy: 0.65200, precision: 0.67101, recall: 0.65974, F1: 0.65703, loss: 0.85086, confuse_matrix: 
+[[ 99  20  17   1]
+ [ 16 274  27  45]
+ [ 30 113 165  19]
+ [  0  55  13 129]]
+Sat, 11 May 2024 22:44:22 - train_model.py[line:274] - INFO: Testing epoch: 6, accuracy: 0.61681, precision: 0.63951, recall: 0.61432, F1: 0.61344, loss: 0.91882, confuse_matrix: 
+[[ 69  16  45   7]
+ [  7 195  68  92]
+ [ 15  46 222  44]
+ [  0  40  12 145]]
+Sat, 11 May 2024 22:45:05 - train_model.py[line:274] - INFO: Testing epoch: 7, accuracy: 0.45357, precision: 0.61902, recall: 0.44078, F1: 0.40889, loss: 1.21107, confuse_matrix: 
+[[ 33   0 103   1]
+ [  3  26 302  31]
+ [  8   5 300  14]
+ [  0   9  83 105]]
+Sat, 11 May 2024 22:45:49 - train_model.py[line:274] - INFO: Testing epoch: 8, accuracy: 0.67253, precision: 0.69197, recall: 0.65950, F1: 0.66901, loss: 0.86745, confuse_matrix: 
+[[ 95  12  29   1]
+ [ 13 280  47  22]
+ [ 29  82 207   9]
+ [  0  63  28 106]]
+Sat, 11 May 2024 22:46:32 - train_model.py[line:274] - INFO: Testing epoch: 9, accuracy: 0.64125, precision: 0.68346, recall: 0.64262, F1: 0.63115, loss: 0.97190, confuse_matrix: 
+[[114  11  12   0]
+ [ 27 293  33   9]
+ [ 52 104 166   5]
+ [  2  86  26  83]]
+Sat, 11 May 2024 22:47:16 - train_model.py[line:274] - INFO: Testing epoch: 10, accuracy: 0.60802, precision: 0.62412, recall: 0.66164, F1: 0.61198, loss: 0.98094, confuse_matrix: 
+[[125   1  10   1]
+ [ 58 149 109  46]
+ [ 69  18 220  20]
+ [  6  25  38 128]]
+Sat, 11 May 2024 22:47:59 - train_model.py[line:274] - INFO: Testing epoch: 11, accuracy: 0.57478, precision: 0.63451, recall: 0.60170, F1: 0.58814, loss: 1.03644, confuse_matrix: 
+[[ 91   3  40   3]
+ [ 14 100 207  41]
+ [ 19  20 272  16]
+ [  0  33  39 125]]
+Sat, 11 May 2024 22:48:45 - train_model.py[line:274] - INFO: Testing epoch: 12, accuracy: 0.65103, precision: 0.65586, recall: 0.68609, F1: 0.65138, loss: 0.94307, confuse_matrix: 
+[[127   1   9   0]
+ [ 55 220  59  28]
+ [ 68  44 203  12]
+ [  5  47  29 116]]
+Sat, 11 May 2024 22:49:29 - train_model.py[line:274] - INFO: Testing epoch: 13, accuracy: 0.66471, precision: 0.67391, recall: 0.66121, F1: 0.66687, loss: 0.85282, confuse_matrix: 
+[[ 86  23  25   3]
+ [ 11 243  70  38]
+ [ 23  66 216  22]
+ [  1  35  26 135]]
+Sat, 11 May 2024 22:50:13 - train_model.py[line:274] - INFO: Testing epoch: 14, accuracy: 0.62268, precision: 0.64428, recall: 0.66057, F1: 0.63160, loss: 0.97196, confuse_matrix: 
+[[105   3  27   2]
+ [ 24 134 142  62]
+ [ 30  21 255  21]
+ [  1  26  27 143]]
+Sat, 11 May 2024 22:50:56 - train_model.py[line:274] - INFO: Testing epoch: 15, accuracy: 0.60899, precision: 0.63040, recall: 0.65734, F1: 0.61501, loss: 1.00408, confuse_matrix: 
+[[100   5  26   6]
+ [ 25 125 110 102]
+ [ 27  27 231  42]
+ [  1  12  17 167]]
+Sat, 11 May 2024 22:51:40 - train_model.py[line:274] - INFO: Testing epoch: 16, accuracy: 0.67644, precision: 0.68412, recall: 0.69405, F1: 0.68399, loss: 0.81859, confuse_matrix: 
+[[ 99  10  25   3]
+ [ 13 198 102  49]
+ [ 25  31 247  24]
+ [  2  34  13 148]]
+Sat, 11 May 2024 22:52:25 - train_model.py[line:274] - INFO: Testing epoch: 17, accuracy: 0.69013, precision: 0.69550, recall: 0.71037, F1: 0.69822, loss: 0.83323, confuse_matrix: 
+[[115   5  16   1]
+ [ 15 215  96  36]
+ [ 33  28 248  18]
+ [  1  45  23 128]]
+Sat, 11 May 2024 22:53:09 - train_model.py[line:274] - INFO: Testing epoch: 18, accuracy: 0.62659, precision: 0.64803, recall: 0.65947, F1: 0.64135, loss: 0.97863, confuse_matrix: 
+[[109   3  22   3]
+ [ 23 159 142  38]
+ [ 31  33 243  20]
+ [  2  33  32 130]]
+Sat, 11 May 2024 22:53:52 - train_model.py[line:274] - INFO: Testing epoch: 19, accuracy: 0.62170, precision: 0.66956, recall: 0.63389, F1: 0.63787, loss: 1.04234, confuse_matrix: 
+[[103  13  21   0]
+ [ 15 183 143  21]
+ [ 26  48 247   6]
+ [  1  41  52 103]]
+Sat, 11 May 2024 22:54:35 - train_model.py[line:274] - INFO: Testing epoch: 20, accuracy: 0.67546, precision: 0.67595, recall: 0.69178, F1: 0.68210, loss: 0.83669, confuse_matrix: 
+[[109   9  17   2]
+ [ 20 239  67  36]
+ [ 34  62 213  18]
+ [  2  39  26 130]]
+Sat, 11 May 2024 22:55:18 - train_model.py[line:274] - INFO: Testing epoch: 21, accuracy: 0.59922, precision: 0.64463, recall: 0.62007, F1: 0.62407, loss: 1.06908, confuse_matrix: 
+[[ 97   6  31   3]
+ [ 11 162 159  30]
+ [ 21  56 234  16]
+ [  0  44  33 120]]
+Sat, 11 May 2024 22:56:01 - train_model.py[line:274] - INFO: Testing epoch: 22, accuracy: 0.63050, precision: 0.65409, recall: 0.66282, F1: 0.64880, loss: 1.06111, confuse_matrix: 
+[[102   6  27   2]
+ [ 18 157 139  48]
+ [ 21  43 241  22]
+ [  1  29  22 145]]
+Sat, 11 May 2024 22:56:45 - train_model.py[line:274] - INFO: Testing epoch: 23, accuracy: 0.69013, precision: 0.71440, recall: 0.68274, F1: 0.69509, loss: 0.77717, confuse_matrix: 
+[[ 90  15  31   1]
+ [  9 237  79  37]
+ [ 10  48 250  19]
+ [  0  51  17 129]]
+Sat, 11 May 2024 22:57:29 - train_model.py[line:274] - INFO: Testing epoch: 24, accuracy: 0.69404, precision: 0.70088, recall: 0.69357, F1: 0.69707, loss: 0.83378, confuse_matrix: 
+[[ 93  18  23   3]
+ [ 13 250  65  34]
+ [ 24  61 227  15]
+ [  1  44  12 140]]
+Sat, 11 May 2024 22:58:11 - train_model.py[line:274] - INFO: Testing epoch: 25, accuracy: 0.65298, precision: 0.70371, recall: 0.67989, F1: 0.66364, loss: 0.94409, confuse_matrix: 
+[[ 90   4  41   2]
+ [ 11 142 155  54]
+ [ 12  17 269  29]
+ [  1  14  15 167]]
+Sat, 11 May 2024 22:58:56 - train_model.py[line:274] - INFO: Testing epoch: 26, accuracy: 0.69697, precision: 0.73235, recall: 0.67938, F1: 0.69755, loss: 0.82364, confuse_matrix: 
+[[ 78  23  34   2]
+ [  5 251  72  34]
+ [  7  58 245  17]
+ [  0  44  14 139]]
+Sat, 11 May 2024 22:59:39 - train_model.py[line:274] - INFO: Testing epoch: 27, accuracy: 0.61584, precision: 0.67345, recall: 0.63959, F1: 0.62956, loss: 1.19507, confuse_matrix: 
+[[ 95   3  37   2]
+ [ 20 127 180  35]
+ [ 14  25 276  12]
+ [  3  19  43 132]]
+Sat, 11 May 2024 23:00:22 - train_model.py[line:274] - INFO: Testing epoch: 28, accuracy: 0.59531, precision: 0.67944, recall: 0.61444, F1: 0.60874, loss: 1.33578, confuse_matrix: 
+[[ 90   3  43   1]
+ [ 16 110 195  41]
+ [  8  23 287   9]
+ [  0  14  61 122]]
+Sat, 11 May 2024 23:01:06 - train_model.py[line:274] - INFO: Testing epoch: 29, accuracy: 0.66960, precision: 0.69674, recall: 0.66874, F1: 0.67660, loss: 1.01242, confuse_matrix: 
+[[ 91  12  32   2]
+ [ 11 210 105  36]
+ [ 17  41 257  12]
+ [  0  34  36 127]]
+Sat, 11 May 2024 23:01:49 - train_model.py[line:274] - INFO: Testing epoch: 30, accuracy: 0.65200, precision: 0.71023, recall: 0.63710, F1: 0.65829, loss: 1.07021, confuse_matrix: 
+[[ 89  14  34   0]
+ [ 11 232 105  14]
+ [ 13  63 247   4]
+ [  1  56  41  99]]
+Sat, 11 May 2024 23:02:32 - train_model.py[line:274] - INFO: Testing epoch: 31, accuracy: 0.63148, precision: 0.65573, recall: 0.66297, F1: 0.64563, loss: 1.24551, confuse_matrix: 
+[[104   7  23   3]
+ [ 20 153 145  44]
+ [ 28  30 250  19]
+ [  1  26  31 139]]
+Sat, 11 May 2024 23:03:15 - train_model.py[line:274] - INFO: Testing epoch: 32, accuracy: 0.66764, precision: 0.71362, recall: 0.65260, F1: 0.67238, loss: 0.85964, confuse_matrix: 
+[[ 91  28  17   1]
+ [ 10 278  59  15]
+ [ 19  94 206   8]
+ [  0  72  17 108]]
+Sat, 11 May 2024 23:03:58 - train_model.py[line:274] - INFO: Testing epoch: 33, accuracy: 0.62659, precision: 0.67987, recall: 0.65342, F1: 0.64148, loss: 1.22387, confuse_matrix: 
+[[ 94   3  38   2]
+ [ 13 128 178  43]
+ [ 14  20 274  19]
+ [  1  26  25 145]]
+Sat, 11 May 2024 23:04:42 - train_model.py[line:274] - INFO: Testing epoch: 34, accuracy: 0.57185, precision: 0.66838, recall: 0.57784, F1: 0.58727, loss: 1.82258, confuse_matrix: 
+[[ 83   6  47   1]
+ [ 11 120 209  22]
+ [ 11  32 280   4]
+ [  1  32  62 102]]
+Sat, 11 May 2024 23:05:26 - train_model.py[line:274] - INFO: Testing epoch: 35, accuracy: 0.64614, precision: 0.66024, recall: 0.69683, F1: 0.66052, loss: 1.26508, confuse_matrix: 
+[[122   1  11   3]
+ [ 36 156 135  35]
+ [ 42  34 237  14]
+ [  4  26  21 146]]
+Sat, 11 May 2024 23:06:09 - train_model.py[line:274] - INFO: Testing epoch: 36, accuracy: 0.66764, precision: 0.70102, recall: 0.66272, F1: 0.67683, loss: 1.20182, confuse_matrix: 
+[[ 90  15  31   1]
+ [  8 229 101  24]
+ [ 22  57 241   7]
+ [  0  47  27 123]]
+Sat, 11 May 2024 23:06:52 - train_model.py[line:274] - INFO: Testing epoch: 37, accuracy: 0.68231, precision: 0.68948, recall: 0.69370, F1: 0.68570, loss: 1.15226, confuse_matrix: 
+[[108   8  20   1]
+ [ 40 237  64  21]
+ [ 23  68 228   8]
+ [ 10  44  18 125]]
+Sat, 11 May 2024 23:07:36 - train_model.py[line:274] - INFO: Testing epoch: 38, accuracy: 0.72532, precision: 0.73076, recall: 0.73621, F1: 0.73284, loss: 1.03920, confuse_matrix: 
+[[103  10  21   3]
+ [ 11 250  60  41]
+ [ 19  56 234  18]
+ [  1  24  17 155]]
+Sat, 11 May 2024 23:08:19 - train_model.py[line:274] - INFO: Testing epoch: 39, accuracy: 0.68035, precision: 0.68999, recall: 0.68924, F1: 0.68845, loss: 1.02021, confuse_matrix: 
+[[102  13  21   1]
+ [ 17 252  64  29]
+ [ 26  77 208  16]
+ [  4  49  10 134]]
+Sat, 11 May 2024 23:09:04 - train_model.py[line:274] - INFO: Testing epoch: 40, accuracy: 0.72239, precision: 0.73377, recall: 0.73006, F1: 0.72715, loss: 1.20761, confuse_matrix: 
+[[102  17  14   4]
+ [ 13 281  30  38]
+ [ 21  81 202  23]
+ [  0  40   3 154]]
+Sat, 11 May 2024 23:09:48 - train_model.py[line:274] - INFO: Testing epoch: 41, accuracy: 0.64125, precision: 0.68405, recall: 0.65641, F1: 0.65780, loss: 1.46008, confuse_matrix: 
+[[102   5  28   2]
+ [ 14 180 145  23]
+ [ 28  38 255   6]
+ [  0  38  40 119]]
+Sat, 11 May 2024 23:10:31 - train_model.py[line:274] - INFO: Testing epoch: 42, accuracy: 0.63930, precision: 0.69721, recall: 0.65025, F1: 0.65653, loss: 1.57539, confuse_matrix: 
+[[ 94   5  38   0]
+ [ 15 162 160  25]
+ [ 10  31 274  12]
+ [  0  37  36 124]]
+Sat, 11 May 2024 23:11:14 - train_model.py[line:274] - INFO: Testing epoch: 43, accuracy: 0.64614, precision: 0.68558, recall: 0.68372, F1: 0.66030, loss: 1.58689, confuse_matrix: 
+[[106   1  29   1]
+ [ 21 138 159  44]
+ [ 20  19 266  22]
+ [  2  18  26 151]]
+Sat, 11 May 2024 23:11:57 - train_model.py[line:274] - INFO: Testing epoch: 44, accuracy: 0.66471, precision: 0.67789, recall: 0.68899, F1: 0.67661, loss: 1.58002, confuse_matrix: 
+[[100   5  30   2]
+ [ 19 184 112  47]
+ [ 20  38 244  25]
+ [  1  31  13 152]]
+Sat, 11 May 2024 23:12:40 - train_model.py[line:274] - INFO: Testing epoch: 45, accuracy: 0.64223, precision: 0.69717, recall: 0.64222, F1: 0.65006, loss: 1.93683, confuse_matrix: 
+[[ 99   1  37   0]
+ [ 19 196 134  13]
+ [ 19  40 264   4]
+ [  3  52  44  98]]
+Sat, 11 May 2024 23:13:23 - train_model.py[line:274] - INFO: Testing epoch: 46, accuracy: 0.62072, precision: 0.67795, recall: 0.62391, F1: 0.63331, loss: 1.97409, confuse_matrix: 
+[[ 87   4  45   1]
+ [ 15 160 161  26]
+ [ 11  36 273   7]
+ [  1  49  32 115]]
+Sat, 11 May 2024 23:14:06 - train_model.py[line:274] - INFO: Testing epoch: 47, accuracy: 0.65982, precision: 0.67820, recall: 0.69739, F1: 0.67324, loss: 1.65575, confuse_matrix: 
+[[111   2  23   1]
+ [ 25 156 133  48]
+ [ 26  32 259  10]
+ [  2  25  21 149]]
+Sat, 11 May 2024 23:14:49 - train_model.py[line:274] - INFO: Testing epoch: 48, accuracy: 0.71065, precision: 0.74692, recall: 0.70060, F1: 0.71682, loss: 1.42504, confuse_matrix: 
+[[ 86   6  43   2]
+ [  7 244  83  28]
+ [  5  49 255  18]
+ [  0  42  13 142]]
+Sat, 11 May 2024 23:15:32 - train_model.py[line:274] - INFO: Testing epoch: 49, accuracy: 0.67644, precision: 0.71154, recall: 0.68656, F1: 0.68959, loss: 1.69472, confuse_matrix: 
+[[105   6  26   0]
+ [ 19 208 114  21]
+ [ 21  44 257   5]
+ [  1  32  42 122]]
+Sat, 11 May 2024 23:16:15 - train_model.py[line:274] - INFO: Testing epoch: 50, accuracy: 0.64418, precision: 0.68469, recall: 0.67435, F1: 0.65776, loss: 1.96126, confuse_matrix: 
+[[102   1  34   0]
+ [ 20 139 159  44]
+ [ 21  24 274   8]
+ [  1  23  29 144]]
+Sat, 11 May 2024 23:16:58 - train_model.py[line:274] - INFO: Testing epoch: 51, accuracy: 0.64125, precision: 0.67364, recall: 0.65568, F1: 0.65276, loss: 1.97912, confuse_matrix: 
+[[ 96   6  35   0]
+ [ 21 172 133  36]
+ [ 20  36 259  12]
+ [  1  26  41 129]]
+Sat, 11 May 2024 23:17:41 - train_model.py[line:274] - INFO: Testing epoch: 52, accuracy: 0.65689, precision: 0.70069, recall: 0.65717, F1: 0.66827, loss: 1.74050, confuse_matrix: 
+[[ 94  11  30   2]
+ [ 12 200 120  30]
+ [ 14  47 262   4]
+ [  1  29  51 116]]
+Sat, 11 May 2024 23:18:24 - train_model.py[line:274] - INFO: Testing epoch: 53, accuracy: 0.65494, precision: 0.71787, recall: 0.66263, F1: 0.66712, loss: 1.83890, confuse_matrix: 
+[[ 97   3  37   0]
+ [ 17 169 151  25]
+ [ 13  21 285   8]
+ [  0  22  56 119]]
+Sat, 11 May 2024 23:19:07 - train_model.py[line:274] - INFO: Testing epoch: 54, accuracy: 0.65494, precision: 0.70800, recall: 0.65624, F1: 0.67098, loss: 1.74280, confuse_matrix: 
+[[ 93   8  36   0]
+ [ 10 198 127  27]
+ [ 11  49 260   7]
+ [  0  37  41 119]]
+Sat, 11 May 2024 23:19:50 - train_model.py[line:274] - INFO: Testing epoch: 55, accuracy: 0.61975, precision: 0.68685, recall: 0.63790, F1: 0.63666, loss: 2.14526, confuse_matrix: 
+[[100   5  32   0]
+ [ 15 140 181  26]
+ [ 17  24 280   6]
+ [  1  31  51 114]]
+Sat, 11 May 2024 23:20:34 - train_model.py[line:274] - INFO: Testing epoch: 56, accuracy: 0.65787, precision: 0.69272, recall: 0.66409, F1: 0.67000, loss: 1.82016, confuse_matrix: 
+[[102   5  30   0]
+ [ 15 211 114  22]
+ [ 23  49 247   8]
+ [  1  44  39 113]]
+Sat, 11 May 2024 23:21:17 - train_model.py[line:274] - INFO: Testing epoch: 57, accuracy: 0.69013, precision: 0.70708, recall: 0.71416, F1: 0.70368, loss: 1.81581, confuse_matrix: 
+[[108   9  19   1]
+ [ 22 193 112  35]
+ [ 19  37 258  13]
+ [  1  23  26 147]]
+Sat, 11 May 2024 23:22:01 - train_model.py[line:274] - INFO: Testing epoch: 58, accuracy: 0.66862, precision: 0.71715, recall: 0.67704, F1: 0.67954, loss: 1.87271, confuse_matrix: 
+[[107   3  26   1]
+ [ 17 194 132  19]
+ [ 21  28 274   4]
+ [  0  35  53 109]]
+Sat, 11 May 2024 23:22:45 - train_model.py[line:274] - INFO: Testing epoch: 59, accuracy: 0.63441, precision: 0.69319, recall: 0.65381, F1: 0.64759, loss: 2.19090, confuse_matrix: 
+[[ 98   2  37   0]
+ [ 26 140 173  23]
+ [ 12  24 284   7]
+ [  4  25  41 127]]
+Sat, 11 May 2024 23:23:29 - train_model.py[line:274] - INFO: Testing epoch: 60, accuracy: 0.67937, precision: 0.70630, recall: 0.68140, F1: 0.68708, loss: 1.82438, confuse_matrix: 
+[[ 96   7  32   2]
+ [ 19 207 109  27]
+ [ 12  42 266   7]
+ [  3  42  26 126]]
+Sat, 11 May 2024 23:24:12 - train_model.py[line:274] - INFO: Testing epoch: 61, accuracy: 0.64223, precision: 0.68093, recall: 0.65557, F1: 0.65298, loss: 2.04369, confuse_matrix: 
+[[106   4  27   0]
+ [ 26 184 130  22]
+ [ 19  46 259   3]
+ [  7  37  45 108]]
+Sat, 11 May 2024 23:24:55 - train_model.py[line:274] - INFO: Testing epoch: 62, accuracy: 0.68035, precision: 0.71041, recall: 0.67990, F1: 0.68730, loss: 1.94186, confuse_matrix: 
+[[ 94   9  33   1]
+ [ 13 209 112  28]
+ [ 17  32 267  11]
+ [  0  39  32 126]]
+Sat, 11 May 2024 23:25:39 - train_model.py[line:274] - INFO: Testing epoch: 63, accuracy: 0.66569, precision: 0.70151, recall: 0.67493, F1: 0.67696, loss: 1.97087, confuse_matrix: 
+[[ 99   5  32   1]
+ [ 21 186 130  25]
+ [ 15  32 271   9]
+ [  0  39  33 125]]
+Sat, 11 May 2024 23:26:23 - train_model.py[line:274] - INFO: Testing epoch: 64, accuracy: 0.68915, precision: 0.73625, recall: 0.69262, F1: 0.70497, loss: 1.84800, confuse_matrix: 
+[[ 94   8  35   0]
+ [ 10 205 118  29]
+ [  5  43 269  10]
+ [  1  31  28 137]]
+Sat, 11 May 2024 23:27:07 - train_model.py[line:274] - INFO: Testing epoch: 65, accuracy: 0.66667, precision: 0.71443, recall: 0.68395, F1: 0.68572, loss: 2.14555, confuse_matrix: 
+[[105   4  28   0]
+ [ 14 174 146  28]
+ [ 11  32 276   8]
+ [  1  37  32 127]]
+Sat, 11 May 2024 23:27:52 - train_model.py[line:274] - INFO: Testing epoch: 66, accuracy: 0.66276, precision: 0.70471, recall: 0.67753, F1: 0.67892, loss: 2.16190, confuse_matrix: 
+[[103   7  27   0]
+ [ 12 184 138  28]
+ [ 22  35 265   5]
+ [  2  29  40 126]]
+Sat, 11 May 2024 23:28:37 - train_model.py[line:274] - INFO: Testing epoch: 67, accuracy: 0.66276, precision: 0.69409, recall: 0.68247, F1: 0.67618, loss: 2.32230, confuse_matrix: 
+[[ 99   6  31   1]
+ [ 23 169 133  37]
+ [ 13  36 268  10]
+ [  1  23  31 142]]
+Sat, 11 May 2024 23:29:20 - train_model.py[line:274] - INFO: Testing epoch: 68, accuracy: 0.66276, precision: 0.70345, recall: 0.67124, F1: 0.67183, loss: 2.22204, confuse_matrix: 
+[[ 94   7  35   1]
+ [ 20 174 144  24]
+ [ 16  21 279  11]
+ [  1  32  33 131]]
+Sat, 11 May 2024 23:30:04 - train_model.py[line:274] - INFO: Testing epoch: 69, accuracy: 0.66471, precision: 0.70241, recall: 0.66814, F1: 0.67532, loss: 2.19182, confuse_matrix: 
+[[ 93   8  35   1]
+ [ 16 195 125  26]
+ [ 16  37 265   9]
+ [  0  34  36 127]]
+Sat, 11 May 2024 23:30:48 - train_model.py[line:274] - INFO: Testing epoch: 70, accuracy: 0.67155, precision: 0.71974, recall: 0.66249, F1: 0.67899, loss: 2.20375, confuse_matrix: 
+[[ 87  12  37   1]
+ [  8 210 120  24]
+ [ 11  35 270  11]
+ [  0  40  37 120]]
+Sat, 11 May 2024 23:31:30 - train_model.py[line:274] - INFO: Testing epoch: 71, accuracy: 0.68817, precision: 0.71538, recall: 0.69071, F1: 0.69494, loss: 2.08859, confuse_matrix: 
+[[103   7  26   1]
+ [ 18 220 103  21]
+ [ 21  36 263   7]
+ [  0  43  36 118]]
+Sat, 11 May 2024 23:32:14 - train_model.py[line:274] - INFO: Testing epoch: 72, accuracy: 0.68426, precision: 0.69412, recall: 0.72035, F1: 0.69786, loss: 2.13000, confuse_matrix: 
+[[117   2  17   1]
+ [ 28 190 107  37]
+ [ 30  40 244  13]
+ [  2  22  24 149]]
+Sat, 11 May 2024 23:32:57 - train_model.py[line:274] - INFO: Testing epoch: 73, accuracy: 0.64907, precision: 0.69265, recall: 0.66482, F1: 0.66365, loss: 2.40308, confuse_matrix: 
+[[100   2  34   1]
+ [ 19 168 149  26]
+ [ 17  31 270   9]
+ [  2  34  35 126]]
+Sat, 11 May 2024 23:33:40 - train_model.py[line:274] - INFO: Testing epoch: 74, accuracy: 0.67058, precision: 0.69979, recall: 0.67358, F1: 0.67894, loss: 2.16917, confuse_matrix: 
+[[ 96   7  33   1]
+ [ 16 206 117  23]
+ [ 20  35 260  12]
+ [  1  41  31 124]]
+Sat, 11 May 2024 23:34:24 - train_model.py[line:274] - INFO: Testing epoch: 75, accuracy: 0.73607, precision: 0.73750, recall: 0.74583, F1: 0.74032, loss: 1.77561, confuse_matrix: 
+[[104   7  24   2]
+ [ 13 248  58  43]
+ [ 18  41 246  22]
+ [  1  27  14 155]]
+Sat, 11 May 2024 23:35:08 - train_model.py[line:274] - INFO: Testing epoch: 76, accuracy: 0.65298, precision: 0.72739, recall: 0.65527, F1: 0.66973, loss: 2.32638, confuse_matrix: 
+[[ 89   6  41   1]
+ [  9 174 157  22]
+ [  8  30 280   9]
+ [  0  25  47 125]]
+Sat, 11 May 2024 23:35:51 - train_model.py[line:274] - INFO: Testing epoch: 77, accuracy: 0.68719, precision: 0.70489, recall: 0.69901, F1: 0.69733, loss: 2.11846, confuse_matrix: 
+[[104   7  25   1]
+ [ 18 214 102  28]
+ [ 25  40 252  10]
+ [  0  37  27 133]]
+Sat, 11 May 2024 23:36:34 - train_model.py[line:274] - INFO: Testing epoch: 78, accuracy: 0.70968, precision: 0.72503, recall: 0.72004, F1: 0.71899, loss: 2.06617, confuse_matrix: 
+[[104   6  26   1]
+ [ 13 222  94  33]
+ [ 20  34 259  14]
+ [  0  35  21 141]]
+Sat, 11 May 2024 23:37:17 - train_model.py[line:274] - INFO: Testing epoch: 79, accuracy: 0.67253, precision: 0.70311, recall: 0.67973, F1: 0.68527, loss: 2.30615, confuse_matrix: 
+[[102  10  24   1]
+ [ 14 216 109  23]
+ [ 23  48 248   8]
+ [  0  37  38 122]]
+Sat, 11 May 2024 23:38:00 - train_model.py[line:274] - INFO: Testing epoch: 80, accuracy: 0.66471, precision: 0.70200, recall: 0.66684, F1: 0.67151, loss: 2.30283, confuse_matrix: 
+[[102   6  28   1]
+ [ 19 212 115  16]
+ [ 26  37 258   6]
+ [  0  42  47 108]]
+Sat, 11 May 2024 23:38:43 - train_model.py[line:274] - INFO: Testing epoch: 81, accuracy: 0.70186, precision: 0.71975, recall: 0.70356, F1: 0.70813, loss: 2.05275, confuse_matrix: 
+[[ 96   9  31   1]
+ [ 13 227  91  31]
+ [ 19  39 257  12]
+ [  0  34  25 138]]
+Sat, 11 May 2024 23:39:26 - train_model.py[line:274] - INFO: Testing epoch: 82, accuracy: 0.67937, precision: 0.71693, recall: 0.68755, F1: 0.69104, loss: 2.29293, confuse_matrix: 
+[[ 96   4  36   1]
+ [ 16 192 124  30]
+ [ 14  32 271  10]
+ [  0  26  35 136]]
+Sat, 11 May 2024 23:40:09 - train_model.py[line:274] - INFO: Testing epoch: 83, accuracy: 0.70088, precision: 0.71866, recall: 0.70979, F1: 0.71011, loss: 2.11853, confuse_matrix: 
+[[100   7  29   1]
+ [ 15 217  98  32]
+ [ 20  38 258  11]
+ [  0  32  23 142]]
+Sat, 11 May 2024 23:40:52 - train_model.py[line:274] - INFO: Testing epoch: 84, accuracy: 0.68426, precision: 0.69954, recall: 0.70004, F1: 0.69214, loss: 2.21318, confuse_matrix: 
+[[102   4  30   1]
+ [ 25 195 109  33]
+ [ 20  32 262  13]
+ [  2  30  24 141]]
+Sat, 11 May 2024 23:41:35 - train_model.py[line:274] - INFO: Testing epoch: 85, accuracy: 0.70968, precision: 0.71648, recall: 0.71629, F1: 0.71447, loss: 2.06941, confuse_matrix: 
+[[103  10  23   1]
+ [ 19 238  77  28]
+ [ 25  45 247  10]
+ [  2  35  22 138]]
+Sat, 11 May 2024 23:42:18 - train_model.py[line:274] - INFO: Testing epoch: 86, accuracy: 0.67449, precision: 0.70863, recall: 0.68323, F1: 0.68570, loss: 2.33575, confuse_matrix: 
+[[ 96   5  35   1]
+ [ 15 192 127  28]
+ [ 19  30 267  11]
+ [  0  31  31 135]]
+Sat, 11 May 2024 23:43:01 - train_model.py[line:274] - INFO: Testing epoch: 87, accuracy: 0.67546, precision: 0.71078, recall: 0.68481, F1: 0.68803, loss: 2.35231, confuse_matrix: 
+[[ 98   5  33   1]
+ [ 12 196 126  28]
+ [ 22  32 264   9]
+ [  0  30  34 133]]
+Sat, 11 May 2024 23:43:44 - train_model.py[line:274] - INFO: Testing epoch: 88, accuracy: 0.68817, precision: 0.71231, recall: 0.70251, F1: 0.70078, loss: 2.25313, confuse_matrix: 
+[[102   7  27   1]
+ [ 13 203 115  31]
+ [ 24  34 258  11]
+ [  0  28  28 141]]
+Sat, 11 May 2024 23:44:27 - train_model.py[line:274] - INFO: Testing epoch: 89, accuracy: 0.67449, precision: 0.69775, recall: 0.68665, F1: 0.68405, loss: 2.32592, confuse_matrix: 
+[[101   5  30   1]
+ [ 21 197 115  29]
+ [ 23  35 260   9]
+ [  1  32  32 132]]
+Sat, 11 May 2024 23:45:11 - train_model.py[line:274] - INFO: Testing epoch: 90, accuracy: 0.68426, precision: 0.71810, recall: 0.69457, F1: 0.69820, loss: 2.30526, confuse_matrix: 
+[[ 98   7  31   1]
+ [ 13 198 120  31]
+ [ 14  36 265  12]
+ [  0  29  29 139]]
+Sat, 11 May 2024 23:45:54 - train_model.py[line:274] - INFO: Testing epoch: 91, accuracy: 0.67644, precision: 0.70996, recall: 0.68468, F1: 0.68942, loss: 2.38625, confuse_matrix: 
+[[ 99   8  29   1]
+ [ 13 202 122  25]
+ [ 20  36 261  10]
+ [  0  35  32 130]]
+Sat, 11 May 2024 23:46:36 - train_model.py[line:274] - INFO: Testing epoch: 92, accuracy: 0.67840, precision: 0.71330, recall: 0.68688, F1: 0.69133, loss: 2.38451, confuse_matrix: 
+[[ 98   7  31   1]
+ [ 13 199 124  26]
+ [ 19  34 264  10]
+ [  0  32  32 133]]
+Sat, 11 May 2024 23:47:20 - train_model.py[line:274] - INFO: Testing epoch: 93, accuracy: 0.67840, precision: 0.71217, recall: 0.68876, F1: 0.69088, loss: 2.37150, confuse_matrix: 
+[[ 98   5  33   1]
+ [ 13 194 124  31]
+ [ 19  32 266  10]
+ [  0  29  32 136]]
+Sat, 11 May 2024 23:48:03 - train_model.py[line:274] - INFO: Testing epoch: 94, accuracy: 0.66764, precision: 0.70516, recall: 0.67533, F1: 0.67983, loss: 2.43766, confuse_matrix: 
+[[ 97   6  33   1]
+ [ 13 193 129  27]
+ [ 20  32 265  10]
+ [  0  33  36 128]]
+Sat, 11 May 2024 23:48:46 - train_model.py[line:274] - INFO: Testing epoch: 95, accuracy: 0.67644, precision: 0.70639, recall: 0.68779, F1: 0.68772, loss: 2.39885, confuse_matrix: 
+[[ 99   5  32   1]
+ [ 17 194 122  29]
+ [ 21  32 264  10]
+ [  0  29  33 135]]
+Sat, 11 May 2024 23:49:29 - train_model.py[line:274] - INFO: Testing epoch: 96, accuracy: 0.67253, precision: 0.70915, recall: 0.67988, F1: 0.68741, loss: 2.38263, confuse_matrix: 
+[[ 99   8  29   1]
+ [ 14 205 118  25]
+ [ 15  45 257  10]
+ [  0  36  34 127]]
+Sat, 11 May 2024 23:50:12 - train_model.py[line:274] - INFO: Testing epoch: 97, accuracy: 0.67937, precision: 0.71459, recall: 0.69117, F1: 0.69386, loss: 2.38186, confuse_matrix: 
+[[ 99   6  31   1]
+ [ 15 193 124  30]
+ [ 14  36 266  11]
+ [  0  29  31 137]]
+Sat, 11 May 2024 23:50:55 - train_model.py[line:274] - INFO: Testing epoch: 98, accuracy: 0.68328, precision: 0.71381, recall: 0.69379, F1: 0.69582, loss: 2.36194, confuse_matrix: 
+[[102   7  27   1]
+ [ 15 201 118  28]
+ [ 17  35 265  10]
+ [  1  32  33 131]]
+Sat, 11 May 2024 23:51:38 - train_model.py[line:274] - INFO: Testing epoch: 99, accuracy: 0.68035, precision: 0.71199, recall: 0.69048, F1: 0.69242, loss: 2.39500, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 201 119  27]
+ [ 19  34 264  10]
+ [  1  30  37 129]]
+Sat, 11 May 2024 23:52:21 - train_model.py[line:274] - INFO: Testing epoch: 100, accuracy: 0.68231, precision: 0.71196, recall: 0.69476, F1: 0.69487, loss: 2.38540, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 198 119  30]
+ [ 19  34 264  10]
+ [  1  28  34 134]]
+Sat, 11 May 2024 23:53:04 - train_model.py[line:274] - INFO: Testing epoch: 101, accuracy: 0.68035, precision: 0.71289, recall: 0.69295, F1: 0.69352, loss: 2.41626, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 123  29]
+ [ 18  33 266  10]
+ [  1  28  35 133]]
+Sat, 11 May 2024 23:53:47 - train_model.py[line:274] - INFO: Testing epoch: 102, accuracy: 0.68035, precision: 0.71319, recall: 0.69295, F1: 0.69393, loss: 2.42901, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 123  29]
+ [ 18  33 266  10]
+ [  0  30  34 133]]
+Sat, 11 May 2024 23:54:30 - train_model.py[line:274] - INFO: Testing epoch: 103, accuracy: 0.66764, precision: 0.71038, recall: 0.67514, F1: 0.68060, loss: 2.46717, confuse_matrix: 
+[[ 96   4  36   1]
+ [ 15 188 131  28]
+ [ 14  33 270  10]
+ [  0  30  38 129]]
+Sat, 11 May 2024 23:55:12 - train_model.py[line:274] - INFO: Testing epoch: 104, accuracy: 0.67644, precision: 0.71417, recall: 0.68360, F1: 0.68860, loss: 2.43246, confuse_matrix: 
+[[ 96   6  34   1]
+ [ 15 194 124  29]
+ [ 14  34 269  10]
+ [  0  29  35 133]]
+Sat, 11 May 2024 23:55:55 - train_model.py[line:274] - INFO: Testing epoch: 105, accuracy: 0.67546, precision: 0.71415, recall: 0.68339, F1: 0.68816, loss: 2.44350, confuse_matrix: 
+[[ 97   4  35   1]
+ [ 15 194 125  28]
+ [ 15  34 268  10]
+ [  0  29  36 132]]
+Sat, 11 May 2024 23:56:38 - train_model.py[line:274] - INFO: Testing epoch: 106, accuracy: 0.67351, precision: 0.71045, recall: 0.68254, F1: 0.68631, loss: 2.44958, confuse_matrix: 
+[[ 99   6  31   1]
+ [ 15 193 126  28]
+ [ 16  33 268  10]
+ [  0  32  36 129]]
+Sat, 11 May 2024 23:57:21 - train_model.py[line:274] - INFO: Testing epoch: 107, accuracy: 0.67058, precision: 0.70802, recall: 0.67980, F1: 0.68350, loss: 2.46005, confuse_matrix: 
+[[100   5  31   1]
+ [ 15 193 126  28]
+ [ 17  34 267   9]
+ [  0  33  38 126]]
+Sat, 11 May 2024 23:58:04 - train_model.py[line:274] - INFO: Testing epoch: 108, accuracy: 0.67058, precision: 0.70341, recall: 0.68169, F1: 0.68358, loss: 2.43698, confuse_matrix: 
+[[102   7  27   1]
+ [ 15 196 123  28]
+ [ 20  35 262  10]
+ [  0  33  38 126]]
+Sat, 11 May 2024 23:58:47 - train_model.py[line:274] - INFO: Testing epoch: 109, accuracy: 0.67253, precision: 0.70477, recall: 0.68423, F1: 0.68581, loss: 2.42973, confuse_matrix: 
+[[102   7  27   1]
+ [ 15 196 123  28]
+ [ 20  35 262  10]
+ [  0  33  36 128]]
+Sat, 11 May 2024 23:59:30 - train_model.py[line:274] - INFO: Testing epoch: 110, accuracy: 0.67253, precision: 0.70477, recall: 0.68423, F1: 0.68581, loss: 2.43055, confuse_matrix: 
+[[102   7  27   1]
+ [ 15 196 123  28]
+ [ 20  35 262  10]
+ [  0  33  36 128]]
+Sun, 12 May 2024 00:00:13 - train_model.py[line:274] - INFO: Testing epoch: 111, accuracy: 0.67546, precision: 0.70747, recall: 0.68804, F1: 0.68917, loss: 2.42974, confuse_matrix: 
+[[102   7  27   1]
+ [ 15 196 123  28]
+ [ 20  35 262  10]
+ [  0  31  35 131]]
+Sun, 12 May 2024 00:00:57 - train_model.py[line:274] - INFO: Testing epoch: 112, accuracy: 0.67155, precision: 0.70521, recall: 0.68359, F1: 0.68528, loss: 2.44643, confuse_matrix: 
+[[103   7  26   1]
+ [ 15 195 124  28]
+ [ 19  35 263  10]
+ [  0  33  38 126]]
+Sun, 12 May 2024 00:01:41 - train_model.py[line:274] - INFO: Testing epoch: 113, accuracy: 0.67155, precision: 0.70521, recall: 0.68359, F1: 0.68528, loss: 2.44463, confuse_matrix: 
+[[103   7  26   1]
+ [ 15 195 124  28]
+ [ 19  35 263  10]
+ [  0  33  38 126]]
+Sun, 12 May 2024 00:02:24 - train_model.py[line:274] - INFO: Testing epoch: 114, accuracy: 0.67644, precision: 0.70999, recall: 0.68994, F1: 0.69093, loss: 2.43952, confuse_matrix: 
+[[103   6  27   1]
+ [ 15 195 124  28]
+ [ 19  35 263  10]
+ [  0  30  36 131]]
+Sun, 12 May 2024 00:03:09 - train_model.py[line:274] - INFO: Testing epoch: 115, accuracy: 0.67546, precision: 0.70920, recall: 0.68811, F1: 0.68957, loss: 2.44417, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 124  28]
+ [ 19  35 263  10]
+ [  0  30  36 131]]
+Sun, 12 May 2024 00:03:52 - train_model.py[line:274] - INFO: Testing epoch: 116, accuracy: 0.67742, precision: 0.71175, recall: 0.68964, F1: 0.69135, loss: 2.44287, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 124  28]
+ [ 18  34 265  10]
+ [  0  30  36 131]]
+Sun, 12 May 2024 00:04:35 - train_model.py[line:274] - INFO: Testing epoch: 117, accuracy: 0.67937, precision: 0.71264, recall: 0.69218, F1: 0.69329, loss: 2.43896, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 123  29]
+ [ 18  34 265  10]
+ [  0  29  35 133]]
+Sun, 12 May 2024 00:05:17 - train_model.py[line:274] - INFO: Testing epoch: 118, accuracy: 0.67937, precision: 0.71264, recall: 0.69218, F1: 0.69329, loss: 2.43648, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 123  29]
+ [ 18  34 265  10]
+ [  0  29  35 133]]
+Sun, 12 May 2024 00:06:00 - train_model.py[line:274] - INFO: Testing epoch: 119, accuracy: 0.67937, precision: 0.71264, recall: 0.69218, F1: 0.69329, loss: 2.43835, confuse_matrix: 
+[[102   6  28   1]
+ [ 15 195 123  29]
+ [ 18  34 265  10]
+ [  0  29  35 133]]

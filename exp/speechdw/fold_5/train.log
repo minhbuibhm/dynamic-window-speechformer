@@ -1,0 +1,39 @@
+Sun, 05 May 2024 01:55:56 - train_model.py[line:86] - INFO: workshop: ./exp/SpeechDW/iemocap_e120_b32_lr0.001_hubert12_05-05-2024 01-55-51_/fold_5
+Sun, 05 May 2024 01:55:56 - train_model.py[line:87] - INFO: seed: 123
+Sun, 05 May 2024 01:55:56 - train_model.py[line:88] - INFO: pid: 1590
+Sun, 05 May 2024 02:02:06 - train_model.py[line:200] - INFO: Training epoch: 0, accuracy: 0.31174, precision: 0.31917, recall: 0.26891, F1: 0.23827, loss: 1.35756
+Sun, 05 May 2024 02:08:02 - train_model.py[line:200] - INFO: Training epoch: 1, accuracy: 0.38934, precision: 0.39993, recall: 0.38937, F1: 0.38613, loss: 1.24444
+Sun, 05 May 2024 02:13:48 - train_model.py[line:200] - INFO: Training epoch: 2, accuracy: 0.47818, precision: 0.48323, recall: 0.49373, F1: 0.48666, loss: 1.14864
+Sun, 05 May 2024 02:19:38 - train_model.py[line:200] - INFO: Training epoch: 3, accuracy: 0.57130, precision: 0.57987, recall: 0.58853, F1: 0.58261, loss: 1.02161
+Sun, 05 May 2024 02:25:28 - train_model.py[line:200] - INFO: Training epoch: 4, accuracy: 0.59627, precision: 0.60632, recall: 0.61334, F1: 0.60771, loss: 0.96398
+Sun, 05 May 2024 02:31:16 - train_model.py[line:200] - INFO: Training epoch: 5, accuracy: 0.62348, precision: 0.63383, recall: 0.63718, F1: 0.63247, loss: 0.91668
+Sun, 05 May 2024 02:37:05 - train_model.py[line:200] - INFO: Training epoch: 6, accuracy: 0.63608, precision: 0.64695, recall: 0.64876, F1: 0.64479, loss: 0.88698
+Sun, 05 May 2024 02:42:52 - train_model.py[line:200] - INFO: Training epoch: 7, accuracy: 0.65789, precision: 0.66650, recall: 0.67234, F1: 0.66648, loss: 0.84175
+Sun, 05 May 2024 02:48:34 - train_model.py[line:200] - INFO: Training epoch: 8, accuracy: 0.66982, precision: 0.67875, recall: 0.68368, F1: 0.67910, loss: 0.81502
+Sun, 05 May 2024 02:54:27 - train_model.py[line:200] - INFO: Training epoch: 9, accuracy: 0.68084, precision: 0.68933, recall: 0.69625, F1: 0.69082, loss: 0.78735
+Sun, 05 May 2024 03:00:20 - train_model.py[line:200] - INFO: Training epoch: 10, accuracy: 0.70558, precision: 0.71504, recall: 0.71647, F1: 0.71320, loss: 0.74216
+Sun, 05 May 2024 03:06:04 - train_model.py[line:200] - INFO: Training epoch: 11, accuracy: 0.70085, precision: 0.71194, recall: 0.71181, F1: 0.71048, loss: 0.75284
+Sun, 05 May 2024 03:11:50 - train_model.py[line:200] - INFO: Training epoch: 12, accuracy: 0.73077, precision: 0.73746, recall: 0.74236, F1: 0.73791, loss: 0.69076
+Sun, 05 May 2024 03:17:40 - train_model.py[line:200] - INFO: Training epoch: 13, accuracy: 0.71300, precision: 0.72145, recall: 0.72486, F1: 0.72160, loss: 0.71815
+Sun, 05 May 2024 03:23:26 - train_model.py[line:200] - INFO: Training epoch: 14, accuracy: 0.72762, precision: 0.73548, recall: 0.73968, F1: 0.73529, loss: 0.67853
+Sun, 05 May 2024 03:29:11 - train_model.py[line:200] - INFO: Training epoch: 15, accuracy: 0.74202, precision: 0.74976, recall: 0.75365, F1: 0.75005, loss: 0.65291
+Sun, 05 May 2024 03:35:06 - train_model.py[line:200] - INFO: Training epoch: 16, accuracy: 0.75596, precision: 0.76428, recall: 0.76494, F1: 0.76301, loss: 0.63744
+Sun, 05 May 2024 03:40:49 - train_model.py[line:200] - INFO: Training epoch: 17, accuracy: 0.77036, precision: 0.77659, recall: 0.78045, F1: 0.77735, loss: 0.58788
+Sun, 05 May 2024 03:46:37 - train_model.py[line:200] - INFO: Training epoch: 18, accuracy: 0.78318, precision: 0.78891, recall: 0.79226, F1: 0.78962, loss: 0.56629
+Sun, 05 May 2024 03:52:28 - train_model.py[line:200] - INFO: Training epoch: 19, accuracy: 0.77868, precision: 0.78376, recall: 0.78739, F1: 0.78469, loss: 0.56002
+Sun, 05 May 2024 03:58:10 - train_model.py[line:200] - INFO: Training epoch: 20, accuracy: 0.79825, precision: 0.80445, recall: 0.80697, F1: 0.80455, loss: 0.52756
+Sun, 05 May 2024 04:03:54 - train_model.py[line:200] - INFO: Training epoch: 21, accuracy: 0.80994, precision: 0.81326, recall: 0.81689, F1: 0.81432, loss: 0.51364
+Sun, 05 May 2024 04:09:44 - train_model.py[line:200] - INFO: Training epoch: 22, accuracy: 0.81039, precision: 0.81692, recall: 0.81938, F1: 0.81748, loss: 0.49912
+Sun, 05 May 2024 04:15:31 - train_model.py[line:200] - INFO: Training epoch: 23, accuracy: 0.81579, precision: 0.82134, recall: 0.82503, F1: 0.82241, loss: 0.47513
+Sun, 05 May 2024 04:21:16 - train_model.py[line:200] - INFO: Training epoch: 24, accuracy: 0.83041, precision: 0.83368, recall: 0.83789, F1: 0.83513, loss: 0.43924
+Sun, 05 May 2024 04:27:13 - train_model.py[line:200] - INFO: Training epoch: 25, accuracy: 0.84300, precision: 0.84644, recall: 0.84826, F1: 0.84676, loss: 0.41980
+Sun, 05 May 2024 04:33:00 - train_model.py[line:200] - INFO: Training epoch: 26, accuracy: 0.83828, precision: 0.84273, recall: 0.84506, F1: 0.84317, loss: 0.43042
+Sun, 05 May 2024 04:38:46 - train_model.py[line:200] - INFO: Training epoch: 27, accuracy: 0.86235, precision: 0.86556, recall: 0.86920, F1: 0.86702, loss: 0.37584
+Sun, 05 May 2024 04:44:38 - train_model.py[line:200] - INFO: Training epoch: 28, accuracy: 0.86280, precision: 0.86764, recall: 0.86936, F1: 0.86820, loss: 0.37290
+Sun, 05 May 2024 04:50:19 - train_model.py[line:200] - INFO: Training epoch: 29, accuracy: 0.87989, precision: 0.88518, recall: 0.88483, F1: 0.88460, loss: 0.33056
+Sun, 05 May 2024 04:56:06 - train_model.py[line:200] - INFO: Training epoch: 30, accuracy: 0.87809, precision: 0.88005, recall: 0.88269, F1: 0.88109, loss: 0.33421
+Sun, 05 May 2024 05:02:03 - train_model.py[line:200] - INFO: Training epoch: 31, accuracy: 0.88821, precision: 0.89115, recall: 0.89279, F1: 0.89170, loss: 0.29770
+Sun, 05 May 2024 05:07:54 - train_model.py[line:200] - INFO: Training epoch: 32, accuracy: 0.89361, precision: 0.89695, recall: 0.89949, F1: 0.89788, loss: 0.27482
+Sun, 05 May 2024 05:13:44 - train_model.py[line:200] - INFO: Training epoch: 33, accuracy: 0.91678, precision: 0.91746, recall: 0.91831, F1: 0.91778, loss: 0.23442
+Sun, 05 May 2024 05:19:44 - train_model.py[line:200] - INFO: Training epoch: 34, accuracy: 0.91858, precision: 0.92063, recall: 0.92250, F1: 0.92145, loss: 0.21172
+Sun, 05 May 2024 05:25:38 - train_model.py[line:200] - INFO: Training epoch: 35, accuracy: 0.89946, precision: 0.90094, recall: 0.90146, F1: 0.90088, loss: 0.28516
