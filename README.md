@@ -14,7 +14,7 @@ https://ieeexplore.ieee.org/abstract/document/10094651
 https://arxiv.org/abs/2303.01694
 
 ## Result of proposed M-DWFormer Block
-![visualize](./figures/Ses05F_impro05_F020 angry.png)
+![visualize](./figures/Ses05F_impro05_F020.png)
 
 ## Usage
 Please follow the guidelines [here](https://github.com/HappyColor/SpeechFormer).
