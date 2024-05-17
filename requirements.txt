@@ -1,0 +1,15 @@
+fairseq
+librosa
+matplotlib
+numpy
+pandas
+scikit_learn
+scipy
+SoundFile
+torch
+tqdm
+yacs
+lmdb
+tensorboard
+torch-summary
+loguru
