@@ -11,8 +11,7 @@ Based on Speechformer++ and DWFormer
 [\[IEEE/ACM TASLP\]](https://ieeexplore.ieee.org/abstract/document/10011559) SpeechFormer++: A Hierarchical Efficient Framework for Paralinguistic Speech Processing
 
 ## Proposed M-DWFormer block based on DWFormer
-[\[ICASSP 2023\]](https://ieeexplore.ieee.org/abstract/document/10094651) DWFormer:
-Dynamic window transformer for speech emotion recognition
+[\[ICASSP 2023\]](https://ieeexplore.ieee.org/abstract/document/10094651) DWFormer: Dynamic Window Transformer for Speech Emotion Recognition
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
