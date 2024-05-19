@@ -19,7 +19,10 @@ https://arxiv.org/abs/2303.01694
 
 
 ## Result of proposed M-DWFormer Block
+Sample 65:
 ![framework](./figures/10-visualize-angry.drawio.svg)
+
+Sample 60:
 ![framework](./figures/11-visualize-ang.drawio.svg)
 
 ## Usage
