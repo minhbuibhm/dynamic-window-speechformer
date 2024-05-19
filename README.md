@@ -1,32 +1,44 @@
-# Dynamic Window Speechformer
+# Dynamic Window Speechformer (DW-Speechformer)
 Based on Speechformer++ and DWFormer
-![framework](./figures/1-overview.svg)
+<figure>
+  <img
+  src="./figures/1-overview.svg"
+  alt="DW-Speechformer architecture.">
+  <figcaption>Fig 1. DW-Speechformer architecture.</figcaption>
+</figure>
 
 ## Based on Speechformer++
 [\[IEEE/ACM TASLP\]](https://ieeexplore.ieee.org/abstract/document/10011559) SpeechFormer++: A Hierarchical Efficient Framework for Paralinguistic Speech Processing
 
 ## Proposed M-DWFormer block based on DWFormer
-DWFormer is accepted by ICASSP 2023 Oral.
-
-The paper link is: 
-
-https://ieeexplore.ieee.org/abstract/document/10094651
-
-https://arxiv.org/abs/2303.01694
+[\[ICASSP 2023\]](https://ieeexplore.ieee.org/abstract/document/10094651) DWFormer:
+Dynamic window transformer for speech emotion recognition
 
 ## Compare our DW-Speechformer with Speechformer++
-![framework](./figures/15_compare.png)
-
+<figure>
+  <img
+  src="./figures/15_compare.png"
+  alt="t-SNE visualization of DW-Speechformer and Speechformer++ features.">
+  <figcaption>Fig 2. t-SNE visualization of DW-Speechformer and Speechformer++ features.</figcaption>
+</figure>
 
 ## Result of proposed M-DWFormer Block
-Sample 65:
-![framework](./figures/10-visualize-angry.drawio.svg)
 
-Sample 60:
-![framework](./figures/11-visualize-ang.drawio.svg)
+<figure>
+  <img
+  src="./figures/10-visualize-angry.drawio.svg"
+  alt="Visualize proposed M-DWFormer Block on Sample 65.">
+  <figcaption>Fig 3. Visualize proposed M-DWFormer Block on Sample 65.</figcaption>
+</figure>
+<figure>
+  <img
+  src="./figures/11-visualize-ang.drawio.svg"
+  alt="Visualize proposed M-DWFormer Block on Sample 60.">
+  <figcaption>Fig 4. Visualize proposed M-DWFormer Block on Sample 60.</figcaption>
+</figure>
 
 ## Usage
-Please follow the guidelines [here](https://github.com/HappyColor/SpeechFormer).
+Please follow the guidelines of Speechformer [here](https://github.com/HappyColor/SpeechFormer).
 
 ## Citation
 ```
