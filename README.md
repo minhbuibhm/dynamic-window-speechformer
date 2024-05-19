@@ -1,4 +1,5 @@
 # Dynamic Window Speechformer
+Based on Speechformer++ and DWFormer
 ![framework](./figures/1-overview.svg)
 
 ## Based on Speechformer++
@@ -13,8 +14,13 @@ https://ieeexplore.ieee.org/abstract/document/10094651
 
 https://arxiv.org/abs/2303.01694
 
+## Compare our DW-Speechformer with Speechformer++
+![framework](./figures/15_compare.png)
+
+
 ## Result of proposed M-DWFormer Block
-![framework](./figures/Ses05F_impro05_F020.png)
+![framework](./figures/10-visualize-angry.drawio.svg)
+![framework](./figures/11-visualize-ang.drawio.svg)
 
 ## Usage
 Please follow the guidelines [here](https://github.com/HappyColor/SpeechFormer).
