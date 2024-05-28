@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-<video style="width:70%" controls src="demo.gif"></video>
+![Demo](demo.gif)
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
