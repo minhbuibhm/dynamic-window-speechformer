@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-![Demo](demo.gif)
+![Demo](https://github.com/minhbuibhm/dynamic-window-speechformer/blob/main/demo.gif)
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
