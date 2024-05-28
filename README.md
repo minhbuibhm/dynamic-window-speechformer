@@ -13,6 +13,9 @@ Based on Speechformer++ and DWFormer
 ## Proposed M-DWFormer block based on DWFormer
 [\[ICASSP 2023\]](https://ieeexplore.ieee.org/abstract/document/10094651) DWFormer: Dynamic Window Transformer for Speech Emotion Recognition
 
+## Demo (Vietnamese version)
+![Demo](demo.mp4)
+
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
   <img
