@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-demo.mp4
+<video src='demo.mp4' width=180/>
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
