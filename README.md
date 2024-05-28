@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-![Demo](./demo.mp4)
+demo.mp4
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
