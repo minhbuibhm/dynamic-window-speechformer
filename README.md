@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-<video src='demo.mov' width=180/>
+<video style="width:70%" controls src="demo.mov"></video>
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
