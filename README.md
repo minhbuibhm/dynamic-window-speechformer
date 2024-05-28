@@ -15,7 +15,7 @@ Based on Speechformer++ and DWFormer
 
 ## Demo
 This is the demo:
-<video style="width:70%" controls src="demo.mov"></video>
+<video style="width:70%" controls src="https://github.com/minhbuibhm/dynamic-window-speechformer/blob/main/demo.mov"></video>
 
 ## Compare our DW-Speechformer with Speechformer++
 <figure>
