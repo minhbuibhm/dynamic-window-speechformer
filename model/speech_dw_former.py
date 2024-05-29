@@ -5,10 +5,12 @@ import torch.nn.functional as F
 from functools import reduce
 from module.utils import create_PositionalEncoding, statistical_information
 from module.utils import _no_grad_trunc_normal_
+from module.utils import normalize_tensor
 from module.speech_dw_former_layer import SpeechDW_UnitEncoder
 from model.transformer import build_vanilla_transformer
 import math
 from loguru import logger
+from module.classifier_layer import SVM_Classifier
 
 class ModifiedDWBlock(nn.Module):
     def __init__(self, **kwargs):
@@ -24,12 +26,16 @@ class ModifiedDWBlock(nn.Module):
                                                                        need_classifier = False)
         # attn_weights_vanilla: (bsz, tgt_len, src_len) -> (bsz, src_len)
         attn_weights_vanilla = attn_weights_vanilla[0].sum(dim=1) # sum along row
-        attn_weights_vanilla = F.softmax(attn_weights_vanilla, dim=-1)
-       
+        # logger.info(f"Heads average + Sum along row:\n{attn_weights_vanilla}")
+        # attn_weights_vanilla = F.softmax(attn_weights_vanilla, dim=-1)
+        attn_weights_vanilla = normalize_tensor(attn_weights_vanilla)
+        # attn_weights_vanilla[0][5] = 0.6
+        # attn_weights_vanilla[1][4] = 0.6
+        # attn_weights_vanilla[1][5] = 0.6
+        attn_mask, window_mapping = self.generate_local_window_mask_v2(attn_weights_vanilla, threshold=0.5)
         ### attn_mask: (bsz, tsz, tsz)
         ### window_mapping: (bsz, max_num_windows, tsz)
-        attn_mask, window_mapping = self.generate_local_window_mask_v2(attn_weights_vanilla)
-        
+
         attn_mask = attn_mask.unsqueeze(1)
         attn_mask = attn_mask.expand(-1, self.num_heads, -1, -1)
         b, h, t1, t2 = attn_mask.size()
@@ -56,6 +62,11 @@ class ModifiedDWBlock(nn.Module):
 
         word_tokens = self.window_weighted_sum(output_DLWT, attn_weights_local, 
                                                window_mapping)
+        # logger.info(f"Attention weights vanilla: {attn_weights_vanilla}")
+        # logger.info(f"Attention weights local: {attn_weights_vanilla}")
+        # logger.info(f"Window mapping: {window_mapping}")
+        # logger.info(f"Input: {x}")
+
         return (torch.concat((word_tokens, x), dim=1), window_mapping)
         
     def generate_local_window_mask(self, weights, threshold=0.5):
@@ -66,18 +77,18 @@ class ModifiedDWBlock(nn.Module):
         Returns:
         - 
         '''
-        bsz, num_frames = weights.shape
-        attn_mask = torch.full((bsz, num_frames, num_frames), -float('inf'), device='cuda')
-        window_mapping = torch.zeros((bsz, num_frames, num_frames), dtype=torch.float, device='cuda')
+        bsz, tsz = weights.shape
+        attn_mask = torch.full((bsz, tsz, tsz), -float('inf'), device='cuda')
+        window_mapping = torch.zeros((bsz, tsz, tsz), dtype=torch.float, device='cuda')
         
         max_window_count = 0
         for batch_cnt in range(bsz): 
             i = 0
             window_count = 0
-            while i < num_frames:
+            while i < tsz:
                 if weights[batch_cnt, i] < threshold:
                     window_size = 0
-                    while i + window_size < num_frames and weights[batch_cnt, i + window_size] < threshold:
+                    while i + window_size < tsz and weights[batch_cnt, i + window_size] < threshold:
                         window_mapping[batch_cnt, window_count, i + window_size] = 1.0
                         window_size += 1
                     for j in range(i, i + window_size):
@@ -86,7 +97,7 @@ class ModifiedDWBlock(nn.Module):
                     i += window_size
                 else:
                     window_size = 0
-                    while i + window_size < num_frames and weights[batch_cnt, i + window_size] >= threshold:
+                    while i + window_size < tsz and weights[batch_cnt, i + window_size] >= threshold:
                         window_mapping[batch_cnt, window_count, i + window_size] = 1
                         window_size += 1
                     for j in range(i, i + window_size):
@@ -99,7 +110,7 @@ class ModifiedDWBlock(nn.Module):
 
         return attn_mask, window_mapping[:, :max_window_count, :]
     
-    def generate_local_window_mask_v2(weights, threshold=0.5):
+    def generate_local_window_mask_v2(self, weights, threshold=0.5):
         '''
         Inputs:
         - weights: (bsz, tsz)
@@ -117,8 +128,14 @@ class ModifiedDWBlock(nn.Module):
             frame_start = 0
             window_count = 0
             for frame_cnt in range(1, num_frames):
+                 # same window
                 if not (weights[batch_cnt, frame_cnt] ^ weights[batch_cnt, frame_start]):
                     continue
+                # current frame is begin of new window => check the window size = frame_cnt - frame_start
+                if frame_start + 1 == frame_cnt:
+                    weights[batch_cnt, frame_start] = weights[batch_cnt, frame_cnt]
+                    continue
+                
                 attn_mask[batch_cnt, frame_start : frame_cnt, frame_start : frame_cnt] = 0
                 window_mapping[batch_cnt, window_count, frame_start: frame_cnt] = 1
                 
@@ -180,7 +197,6 @@ class SpeechDW_EncoderBlock(nn.Module):
             output = layer(output, window_mapping=window_mapping, x_position=self.position)
             # output = layer(output)
 
-        logger.info(f"[SpeechDW_EncoderBlock] {output.shape}")
         return (output, window_mapping.shape[1])
 
 class SpeechDW_MergeBlock(nn.Module):
@@ -202,7 +218,7 @@ class SpeechDW_MergeBlock(nn.Module):
         
     def forward(self, inputs: tuple):
         x, num_wtok = inputs
-        _, x_fea = x[:, :num_wtok], x[:, num_wtok:]
+        x_wtok, x_fea = x[:, :num_wtok], x[:, num_wtok:]
 
         B, T, C = x_fea.shape
         ms = T if self.MS == -1 else self.MS
@@ -220,13 +236,13 @@ class SpeechDW_MergeBlock(nn.Module):
         x = x_fea
         x = self.norm(self.fc(x))
 
-        logger.info(f"[SpeechDW_MergeBlock] {x.shape}")
         return x
 
 class SpeechDW_Former(nn.Module):
     def __init__(self, input_dim, ffn_embed_dim, num_heads, num_classes,
                  num_layers: list, num_layers_modified_dw: list,
                  hop, expand, dropout=0.1, attention_dropout=0.1, 
+                 classifier=None,
                  **kwargs):
         '''
         input_dim: 
@@ -273,27 +289,50 @@ class SpeechDW_Former(nn.Module):
 
         dim_expand = abs(reduce(lambda x, y: x * y, expand))
         classifier_dim = self.input_dim * dim_expand
-        self.classifier = nn.Sequential(
-            nn.Linear(classifier_dim, classifier_dim//2),
-            nn.ReLU(True),
-            nn.Dropout(0.5),
-            nn.Linear(classifier_dim//2, classifier_dim//4),
-            nn.ReLU(True),
-            nn.Dropout(0.5),
-            nn.Linear(classifier_dim//4, num_classes),
-        )
+        
+        assert classifier in ["Dense", "SVM", "RandomForest", "LogisticRegression"]
+        
+        ### 09/04/2024 fix start
+        if classifier == "Dense":
+            self.classifier = nn.Sequential(
+                nn.Linear(classifier_dim, classifier_dim//2),
+                nn.ReLU(True),
+                nn.Dropout(0.5),
+                nn.Linear(classifier_dim//2, classifier_dim//4),
+                nn.ReLU(True),
+                nn.Dropout(0.5),
+                nn.Linear(classifier_dim//4, num_classes),
+            )
+        elif classifier == "SVM":
+            from module.classifier_layer import SVM_Classifier
+            self.classifier = SVM_Classifier(classifier_dim, self.input_dim, num_classes)
+        elif classifier == "RandomForest":
+            pass
+        elif classifier == "LogisticRegression":
+            pass
+        else:
+            return
+        ### 09/04/2024 fix end
 
     def forward(self, x):
         if self.input_dim != x.shape[-1]:
             x = x[:, :, :self.input_dim]
 
+        ### 31/03 fix start: remove initialized wtok
+        # wtok = self.wtok.expand(x.shape[0], -1, -1)
+        # x = torch.cat((wtok, x), dim=1)
+        ### 31/03 fix start: remove initialized wtok
+
         x = self.layers(x)
         if isinstance(x, tuple):
             x = x[0]
         x = self.avgpool(x.transpose(-1, -2)).squeeze(dim=-1)
+
+        ### 09/04/2024 fix start
         pred = self.classifier(x)
         
         return pred
+        ### 09/04/2024 fix end
 
 def make_layers_dw(Locals: list, Merge: list, expand: list, 
                    num_layers: list, num_layers_modified_dw: list,
