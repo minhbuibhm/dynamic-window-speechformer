@@ -10,7 +10,6 @@ __pycache__/
 *.pth
 *.mp3
 *.csv
-
 *.km
 *.mdb
 *.pdf
